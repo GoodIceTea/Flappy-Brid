@@ -1,0 +1,139 @@
+\doxysection{Bird Class Reference}
+\hypertarget{class_bird}{}\label{class_bird}\index{Bird@{Bird}}
+
+
+Klasa reprezentująca ptaka w grze.  
+
+
+
+
+{\ttfamily \#include $<$Bird.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_bird_a9948c9558b0323ab075f7f42e92905a6}{Bird}} (\mbox{\hyperlink{_player_model_8h_a6c0a8c308b8463d300222e6c41f2a4b1}{Player\+Model}} skin, sf\+::\+Sound \&hit\+Sound, sf\+::\+Sound \&die\+Sound)
+\begin{DoxyCompactList}\small\item\em Konstruktor klasy \doxylink{class_bird}{Bird}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_bird_a7d10693b91a2736611c37f1ef205b911}{\texorpdfstring{$\sim$}{\string~}\+Bird}} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klasy \doxylink{class_bird}{Bird}. \end{DoxyCompactList}\item 
+sf\+::\+Float\+Rect \mbox{\hyperlink{class_bird_add5a8c1d18baff8ca2285279335496b1}{get\+Rect}} ()
+\begin{DoxyCompactList}\small\item\em Pobiera prostokąt kolizji ptaka. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bird_a4065f3bbea46277fc75ebfef79c3f888}{flap}} ()
+\begin{DoxyCompactList}\small\item\em Umożliwia ptakowi machnięcie skrzydłami. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bird_ab8e0d4f887079a0eb31bdcd335d496d4}{draw}} (sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em Rysuje ptaka na oknie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bird_ad57497311542d9251e9fcfdfd5e97edd}{update}} (float delta, sf\+::\+Texture \texorpdfstring{$\ast$}{*}background\+Texture)
+\begin{DoxyCompactList}\small\item\em Aktualizuje stan ptaka. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structpath_model}{path\+Model}} \mbox{\hyperlink{class_bird_a265bf6ffe8705a36d9c4daad217e8aed}{get\+Path\+Model}} (\mbox{\hyperlink{_player_model_8h_a6c0a8c308b8463d300222e6c41f2a4b1}{Player\+Model}} model)
+\begin{DoxyCompactList}\small\item\em Pobiera model ścieżki dla podanego modelu gracza. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa reprezentująca ptaka w grze. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_bird_a9948c9558b0323ab075f7f42e92905a6}\label{class_bird_a9948c9558b0323ab075f7f42e92905a6} 
+\index{Bird@{Bird}!Bird@{Bird}}
+\index{Bird@{Bird}!Bird@{Bird}}
+\doxysubsubsection{\texorpdfstring{Bird()}{Bird()}}
+{\footnotesize\ttfamily Bird\+::\+Bird (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_player_model_8h_a6c0a8c308b8463d300222e6c41f2a4b1}{Player\+Model}}}]{skin,  }\item[{sf\+::\+Sound \&}]{hit\+Sound,  }\item[{sf\+::\+Sound \&}]{die\+Sound }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klasy \doxylink{class_bird}{Bird}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em skin} & Model gracza. \\
+\hline
+{\em hit\+Sound} & Dźwięk uderzenia. \\
+\hline
+{\em die\+Sound} & Dźwięk śmierci. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_bird_a7d10693b91a2736611c37f1ef205b911}\label{class_bird_a7d10693b91a2736611c37f1ef205b911} 
+\index{Bird@{Bird}!````~Bird@{\texorpdfstring{$\sim$}{\string~}Bird}}
+\index{````~Bird@{\texorpdfstring{$\sim$}{\string~}Bird}!Bird@{Bird}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Bird()}{\string~Bird()}}
+{\footnotesize\ttfamily Bird\+::\texorpdfstring{$\sim$}{\string~}\+Bird (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor klasy \doxylink{class_bird}{Bird}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_bird_ab8e0d4f887079a0eb31bdcd335d496d4}\label{class_bird_ab8e0d4f887079a0eb31bdcd335d496d4} 
+\index{Bird@{Bird}!draw@{draw}}
+\index{draw@{draw}!Bird@{Bird}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Bird\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})}
+
+
+
+Rysuje ptaka na oknie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & Okno renderowania. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_bird_a4065f3bbea46277fc75ebfef79c3f888}\label{class_bird_a4065f3bbea46277fc75ebfef79c3f888} 
+\index{Bird@{Bird}!flap@{flap}}
+\index{flap@{flap}!Bird@{Bird}}
+\doxysubsubsection{\texorpdfstring{flap()}{flap()}}
+{\footnotesize\ttfamily void Bird\+::flap (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Umożliwia ptakowi machnięcie skrzydłami. 
+
+\Hypertarget{class_bird_a265bf6ffe8705a36d9c4daad217e8aed}\label{class_bird_a265bf6ffe8705a36d9c4daad217e8aed} 
+\index{Bird@{Bird}!getPathModel@{getPathModel}}
+\index{getPathModel@{getPathModel}!Bird@{Bird}}
+\doxysubsubsection{\texorpdfstring{getPathModel()}{getPathModel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpath_model}{path\+Model}} Bird\+::get\+Path\+Model (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_player_model_8h_a6c0a8c308b8463d300222e6c41f2a4b1}{Player\+Model}}}]{model }\end{DoxyParamCaption})}
+
+
+
+Pobiera model ścieżki dla podanego modelu gracza. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & Model gracza. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Struktura \doxylink{structpath_model}{path\+Model} zawierająca ścieżki do tekstur ptaka. 
+\end{DoxyReturn}
+\Hypertarget{class_bird_add5a8c1d18baff8ca2285279335496b1}\label{class_bird_add5a8c1d18baff8ca2285279335496b1} 
+\index{Bird@{Bird}!getRect@{getRect}}
+\index{getRect@{getRect}!Bird@{Bird}}
+\doxysubsubsection{\texorpdfstring{getRect()}{getRect()}}
+{\footnotesize\ttfamily sf\+::\+Float\+Rect Bird\+::get\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Pobiera prostokąt kolizji ptaka. 
+
+\begin{DoxyReturn}{Returns}
+Prostokąt kolizji ptaka. 
+\end{DoxyReturn}
+\Hypertarget{class_bird_ad57497311542d9251e9fcfdfd5e97edd}\label{class_bird_ad57497311542d9251e9fcfdfd5e97edd} 
+\index{Bird@{Bird}!update@{update}}
+\index{update@{update}!Bird@{Bird}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Bird\+::update (\begin{DoxyParamCaption}\item[{float}]{delta,  }\item[{sf\+::\+Texture \texorpdfstring{$\ast$}{*}}]{background\+Texture }\end{DoxyParamCaption})}
+
+
+
+Aktualizuje stan ptaka. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta} & Czas od ostatniej aktualizacji. \\
+\hline
+{\em background\+Texture} & Tekstura tła. \\
+\hline
+\end{DoxyParams}

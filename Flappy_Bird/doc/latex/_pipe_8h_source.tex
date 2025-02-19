@@ -1,0 +1,41 @@
+\doxysection{Pipe.\+h}
+\hypertarget{_pipe_8h_source}{}\label{_pipe_8h_source}\mbox{\hyperlink{_pipe_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ PIPE\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ PIPE\_H}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <SFML/Graphics.hpp>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <SFML/Audio.hpp>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_bird_8h}{Bird.h}}"{}}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_pipe}{Pipe}}\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_pipe_a44e1548b2a4ade3a8a1eafcead4c5421}{Pipe}}(sf::Sound\ \&pointSound,\ sf::Sound\ \&hitSound,\ sf::Texture*\ upperPipe,\ sf::Texture*\ lowerPipe,\ sf::Texture*\ coin,\ sf::RenderWindow*\ window);}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pipe_ae092c85ae945b1c921c5fdf8e2b28149}{draw}}(sf::RenderWindow\&\ window)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pipe_a58c659a7c66d9e1ab5e778a73a55ab4a}{update}}(\mbox{\hyperlink{class_bird}{Bird}}\ *bird,\ \textcolor{keywordtype}{float}\ delta);}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00051\ \ \ \ \ sf::FloatRect\ \mbox{\hyperlink{class_pipe_af2df063a5deae1a9638cfd21aba7d014}{getUpperRect}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00058\ \ \ \ \ sf::FloatRect\ \mbox{\hyperlink{class_pipe_af5b3382684e81b6e38c5924847253deb}{getLowerRect}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00065\ \ \ \ \ sf::FloatRect\ \mbox{\hyperlink{class_pipe_a5bce62c62ce1d415997722b23fe96a46}{getCoinRect}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{float}\ x,\ y;\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{float}\ h\_difference;\ }
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{bool}\ scored;\ }
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{bool}\ coinVisible;\ }
+\DoxyCodeLine{00073\ \ \ \ \ sf::Sound\ \&pointSound;\ }
+\DoxyCodeLine{00074\ \ \ \ \ sf::Sound\ \&hitSound;\ }
+\DoxyCodeLine{00075\ \ \ \ \ sf::Texture*\ upperPipe;\ }
+\DoxyCodeLine{00076\ \ \ \ \ sf::Texture*\ lowerPipe;\ }
+\DoxyCodeLine{00077\ \ \ \ \ sf::Texture*\ coin;\ }
+\DoxyCodeLine{00078\ \};}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

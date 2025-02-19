@@ -1,0 +1,940 @@
+\doxysection{Engine Class Reference}
+\hypertarget{class_engine}{}\label{class_engine}\index{Engine@{Engine}}
+
+
+Klasa silnika gry Flappy \doxylink{class_bird}{Bird}.  
+
+
+
+
+{\ttfamily \#include $<$Engine.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_engine_a8c98683b0a3aa28d8ab72a8bcd0d52f2}{Engine}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor klasy \doxylink{class_engine}{Engine}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_engine_a8ef7030a089ecb30bbfcb9e43094717a}{\texorpdfstring{$\sim$}{\string~}\+Engine}} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klasy \doxylink{class_engine}{Engine}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_engine_a6c95160f6782194966dfd1a0459d1de6}{setup\+Sounds}} ()
+\begin{DoxyCompactList}\small\item\em Konfiguruje dźwięki gry. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_engine_a9ea459592eaddd2fbf07f7487bce5998}{setup}} ()
+\begin{DoxyCompactList}\small\item\em Przygotowuje silnik gry do rozpoczęcia nowej gry. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_engine_a35096815432e2ce39f8e2ebaf6cf4b05}{destroy}} ()
+\begin{DoxyCompactList}\small\item\em Niszczy zasoby używane przez silnik gry. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_engine_aca6cad28fe6c386cb5dff7b2b1f18252}{restart\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Restartuje grę (po zakończeniu lub na żądanie). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_engine_ad2ff110d5a86c1cd60b541d65915ac48}{update}} ()
+\begin{DoxyCompactList}\small\item\em Aktualizuje stan gry i fizykę obiektów w grze. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_engine_a2e628dcc77512bc596c2c14124e1853c}{handle\+Event}} (sf\+::\+Event \&event)
+\begin{DoxyCompactList}\small\item\em Obsługuje zdarzenia generowane przez użytkownika (np. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_engine_a1b654dc41dfbcb5072147f33142b726e}{draw}} ()
+\begin{DoxyCompactList}\small\item\em Renderuje obiekty gry na ekranie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_engine_af4c789fb939a0870426c698a5124a0ee}{Run}} ()
+\begin{DoxyCompactList}\small\item\em Rozpoczyna główną pętlę gry. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_engine_a9890e98088df98c357244764344147b3}{Play}} ()
+\begin{DoxyCompactList}\small\item\em Rozpoczyna fazę gry. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_engine_a4b92d2fe0b2a48c06f0b8408e7c8f6b2}{Show\+Main\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Wyświetla menu główne gry. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_engine_a0aa54b9083cb271af017f88b3f14f38c}{Show\+Get\+Ready}} (bool idx)
+\begin{DoxyCompactList}\small\item\em Wyświetla ekran "{}\+Get Ready"{}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_engine_a66d4b02ea8d8450e8d200f874a64c7f8}{Get\+Game\+Paused}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca stan pauzy gry. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_engine_afb744d2e07aced85ebc917b06fab6190}{Set\+Game\+Paused}} (bool \+\_\+\+\_\+paused)
+\begin{DoxyCompactList}\small\item\em Ustawia stan pauzy gry. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_engine_a734476eadaa950bea4f7b99abef2226b}{update\+Difficulty}} (\mbox{\hyperlink{_difficulty_8h_a43efb0a2e61815a66134dfa5ccea0a83}{Difficulty}} \+\_\+\+\_\+diff)
+\begin{DoxyCompactList}\small\item\em Aktualizuje poziom trudności gry na podstawie nowego ustawienia. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_engine_aa0e123d4e83ef4a7aa6bfd4db5a6dbbd}{Set\+Game\+Running}} (bool state)
+\begin{DoxyCompactList}\small\item\em Ustawia stan działania gry (uruchomiona lub zatrzymana). \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_engine_ad48f745f0b170905c1611f08dd717468}{Set\+Game\+Overed}} (bool state)
+\begin{DoxyCompactList}\small\item\em Ustawia stan zakończenia gry. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_engine_aea675ef41cb42dc56cb8d0d4e438dffb}{is\+Game\+Running}} ()
+\begin{DoxyCompactList}\small\item\em Sprawdza, czy gra jest uruchomiona. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_engine_a03739d20ec04baf2c6170b2feec2c045}{is\+Game\+Overed}} ()
+\begin{DoxyCompactList}\small\item\em Sprawdza, czy gra jest zakończona. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_engine_af4df91774d72d6ab9857a5c1ae236796}{Get\+Score}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca aktualny wynik gry. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_engine_a6a3a6218c4a8f16cc3724c1f52216459}{Set\+Score}} (int \+\_\+\+\_\+score)
+\begin{DoxyCompactList}\small\item\em Ustawia nowy wynik gry. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_engine_a79bc885fb7c50ba08038c93a35d41ccf}{Set\+Difficulty}} (\mbox{\hyperlink{_difficulty_8h_a43efb0a2e61815a66134dfa5ccea0a83}{Difficulty}} \+\_\+\+\_\+diff)
+\begin{DoxyCompactList}\small\item\em Ustawia poziom trudności gry. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{_difficulty_8h_a43efb0a2e61815a66134dfa5ccea0a83}{Difficulty}} \mbox{\hyperlink{class_engine_a8b8c570ca53e069aacee96f784df9075}{Get\+Difficulty}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca aktualnie ustawiony poziom trudności gry. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_engine_a71ecd1afa0eef559db923b84bc51130d}{Set\+Throat\+Difficulty}} (float \+\_\+\+\_\+throat)
+\begin{DoxyCompactList}\small\item\em Ustawia poziom trudności fizycznej przeszkód w grze. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_engine_a283683441f32e75afedd116682d298e1}{Get\+Throat\+Difficulty}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca aktualnie ustawiony poziom trudności fizycznej przeszkód w grze. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_engine_aa55c13dae065e001ca1b0026dea2002f}{in\+Main\+Menu}}
+\item 
+bool \mbox{\hyperlink{class_engine_abf16480a079090931eae393b6d307b87}{in\+Get\+Ready}}
+\item 
+bool \mbox{\hyperlink{class_engine_a093da3bf5f16f76956431488583b2139}{Get\+Ready\+Frame}}
+\item 
+bool \mbox{\hyperlink{class_engine_a444d352a0fd30a78a5ce04539e8c4228}{game\+Paused}}
+\begin{DoxyCompactList}\small\item\em Flagi stanów gry\+: menu główne, przygotowanie do rozpoczęcia, pauza. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_engine_a7c03664b8b75a1dbd969c27457d34c69}{ground\+Offset}}
+\begin{DoxyCompactList}\small\item\em Przesunięcie terenu gry (ziemi). \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_engine_a3ef576ecb9418de55026fa6634ce9f70}{delta}}
+\begin{DoxyCompactList}\small\item\em Czas delta -\/ czas od ostatniej klatki, używany do obliczeń fizycznych. \end{DoxyCompactList}\item 
+sf\+::\+Render\+Window \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_engine_acb19f573e60457464cc73625d7882653}{window}}
+\begin{DoxyCompactList}\small\item\em Okno renderowania SFML. \end{DoxyCompactList}\item 
+sf\+::\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_engine_a28814fca3577b4b15c1c05e4a59b44e7}{background\+Texture}}
+\begin{DoxyCompactList}\small\item\em Tekstura tła gry. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_bird}{Bird}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_engine_aab0a1b1d855b3c43836c131c15dc3cf3}{bird}}
+\begin{DoxyCompactList}\small\item\em Obiekt reprezentujący postać ptaka w grze. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_player_model_8h_a6c0a8c308b8463d300222e6c41f2a4b1}{Player\+Model}} \mbox{\hyperlink{class_engine_a0b887e4e9370b846840e21dece99bf42}{b\+\_\+skin}}
+\begin{DoxyCompactList}\small\item\em Model gracza (postać gracza). \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_pipe}{Pipe}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_engine_a0e4b0b2f9d5bc28b8df37bc8b4e6c7f5}{pipes}}
+\begin{DoxyCompactList}\small\item\em Wektor przechowujący wskaźniki na rury (przeszkody) w grze. \end{DoxyCompactList}\item 
+sf\+::\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_engine_a459daa61c26ee4632d1a7471b6938b2a}{ground\+Texture}}
+\begin{DoxyCompactList}\small\item\em Tekstura terenu gry (ziemi). \end{DoxyCompactList}\item 
+sf\+::\+Clock \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_engine_a78a382fb19376f9878a297742eeb5c50}{pipe\+Generating\+Clock}}
+\begin{DoxyCompactList}\small\item\em Zegar do generowania rur w grze. \end{DoxyCompactList}\item 
+sf\+::\+Font \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_engine_ad68f03b0b1c3b3327cd77f5ab9d802d2}{font}}
+\begin{DoxyCompactList}\small\item\em Czcionka używana do wyświetlania tekstu w grze. \end{DoxyCompactList}\item 
+sf\+::\+Sound\+Buffer \mbox{\hyperlink{class_engine_af426e66eef798faf9b1a679304b40081}{point\+Sound\+Buffer}}
+\begin{DoxyCompactList}\small\item\em Bufor dźwięku punktu zdobytego w grze. \end{DoxyCompactList}\item 
+sf\+::\+Sound \mbox{\hyperlink{class_engine_a178795b1bd20d0424ea5307021e200a2}{point\+Sound}}
+\begin{DoxyCompactList}\small\item\em Dźwięk punktu zdobytego w grze. \end{DoxyCompactList}\item 
+sf\+::\+Sound\+Buffer \mbox{\hyperlink{class_engine_a1e4d3322832f1a818c6536f08896fe47}{wing\+Sound\+Buffer}}
+\begin{DoxyCompactList}\small\item\em Bufor dźwięku skrzydeł ptaka. \end{DoxyCompactList}\item 
+sf\+::\+Sound \mbox{\hyperlink{class_engine_a3ebd3620afea11af3ecba26850bf9e5b}{wing\+Sound}}
+\begin{DoxyCompactList}\small\item\em Dźwięk skrzydeł ptaka. \end{DoxyCompactList}\item 
+sf\+::\+Sound\+Buffer \mbox{\hyperlink{class_engine_a0a50b27e94bd45b303b6d11ad1a967e1}{hit\+Sound\+Buffer}}
+\begin{DoxyCompactList}\small\item\em Bufor dźwięku uderzenia przeszkody w grze. \end{DoxyCompactList}\item 
+sf\+::\+Sound \mbox{\hyperlink{class_engine_ab620a1c8b3473091733913aacda77e01}{hit\+Sound}}
+\begin{DoxyCompactList}\small\item\em Dźwięk uderzenia przeszkody w grze. \end{DoxyCompactList}\item 
+sf\+::\+Sound\+Buffer \mbox{\hyperlink{class_engine_abe022c4a98c7123dfd5d94388c9bf9a1}{die\+Sound\+Buffer}}
+\begin{DoxyCompactList}\small\item\em Bufor dźwięku śmierci gracza. \end{DoxyCompactList}\item 
+sf\+::\+Sound \mbox{\hyperlink{class_engine_a4bb2952bf5bed744d0276b85257d0e3a}{die\+Sound}}
+\begin{DoxyCompactList}\small\item\em Dźwięk śmierci gracza. \end{DoxyCompactList}\item 
+sf\+::\+Sprite \mbox{\hyperlink{class_engine_a67789981292a556cff57698fda36941c}{logo\+Sprite}}
+\begin{DoxyCompactList}\small\item\em Sprite logo gry. \end{DoxyCompactList}\item 
+sf\+::\+Sprite \mbox{\hyperlink{class_engine_accc81af05a6f2ee25fcb5b20631d00da}{start\+Sprite}}
+\begin{DoxyCompactList}\small\item\em Sprite przycisku rozpoczęcia gry. \end{DoxyCompactList}\item 
+sf\+::\+Sprite \mbox{\hyperlink{class_engine_aab1a7c52bcb892ddd20da145fafe3a68}{get\+Ready\+Sprite}}
+\begin{DoxyCompactList}\small\item\em Sprite ekranu "{}\+Get Ready"{}. \end{DoxyCompactList}\item 
+sf\+::\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_engine_acdea2b80d450e98fda794dd5f28b31b3}{get\+Ready\+Texture}} \mbox{[}2\mbox{]}
+\begin{DoxyCompactList}\small\item\em Tekstura do wyświetlania ekranu "{}\+Get Ready"{}. \end{DoxyCompactList}\item 
+sf\+::\+Sprite \mbox{\hyperlink{class_engine_a4b2e489e2f9333afb17bd251d439eb1f}{gameover\+Sprite}}
+\begin{DoxyCompactList}\small\item\em Sprite ekranu końca gry. \end{DoxyCompactList}\item 
+sf\+::\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_engine_aed1f88872ece628d26f66e6ef33113c9}{gameover\+Texture}}
+\begin{DoxyCompactList}\small\item\em Tekstura do wyświetlania ekranu końca gry. \end{DoxyCompactList}\item 
+sf\+::\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_engine_a9cf5221dc0a0701f7bef328708d7158d}{logo\+Texture}}
+\begin{DoxyCompactList}\small\item\em Tekstura do wyświetlania logo gry. \end{DoxyCompactList}\item 
+sf\+::\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_engine_ae5d0dfb044ff6643a89e388833ad5f12}{start\+Texture}}
+\begin{DoxyCompactList}\small\item\em Tekstura do wyświetlania przycisku startowego. \end{DoxyCompactList}\item 
+sf\+::\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_engine_aed601a334a96dfe7845255673d4a2fd7}{restart\+Texture}}
+\begin{DoxyCompactList}\small\item\em Tekstura do wyświetlania przycisku restartu. \end{DoxyCompactList}\item 
+sf\+::\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_engine_aad615bb6a1f18abd516cc633b0eadd29}{upper\+Pipe}}
+\begin{DoxyCompactList}\small\item\em Tekstura rury górnej (przeszkody). \end{DoxyCompactList}\item 
+sf\+::\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_engine_a2528d36ac99d05d627a73abc1670c8fe}{lower\+Pipe}}
+\begin{DoxyCompactList}\small\item\em Tekstura rury dolnej (przeszkody). \end{DoxyCompactList}\item 
+sf\+::\+Sprite \mbox{\hyperlink{class_engine_a029aaf043f83e3c468df8d507156d421}{coin\+Sprite}}
+\begin{DoxyCompactList}\small\item\em Sprite monety w grze. \end{DoxyCompactList}\item 
+sf\+::\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_engine_a8ba7760cfe1f86c92b0d70647700fc23}{coin}}
+\begin{DoxyCompactList}\small\item\em Tekstura monety w grze. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{_difficulty_8h_a43efb0a2e61815a66134dfa5ccea0a83}{Difficulty}} \mbox{\hyperlink{class_engine_afb3965695543f7c2774e6c9ebfa99835}{chosen\+Difficulty}} = \mbox{\hyperlink{_difficulty_8h_a43efb0a2e61815a66134dfa5ccea0a83a87f8a6ab85c9ced3702b4ea641ad4bb5}{Difficulty\+::\+Medium}}
+\begin{DoxyCompactList}\small\item\em Wybrany poziom trudności gry. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_engine_a06f142569ffd22d7aa603d1e05ad6026}{throat\+Difficulty}} = 340
+\begin{DoxyCompactList}\small\item\em Poziom trudności gry ustalony przez gracza. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_engine_ab774cff40d8dff8228073ccf3ad4f181}{score}} = 0
+\begin{DoxyCompactList}\small\item\em Aktualny wynik gracza. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_engine_a5ad2ede562b6fe476e21b07a7fc1110a}{game\+Running}} = false
+\begin{DoxyCompactList}\small\item\em Flaga wskazująca, czy gra jest uruchomiona. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_engine_abc1ee059032f0c85283404b77c7651a4}{game\+Overed}} = false
+\begin{DoxyCompactList}\small\item\em Flaga określająca, czy gra jest w trakcie działania lub zakończona. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa silnika gry Flappy \doxylink{class_bird}{Bird}. 
+
+Klasa zarządza główną logiką gry, w tym grafiką, dźwiękiem, fizyką obiektów oraz interakcjami użytkownika. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_engine_a8c98683b0a3aa28d8ab72a8bcd0d52f2}\label{class_engine_a8c98683b0a3aa28d8ab72a8bcd0d52f2} 
+\index{Engine@{Engine}!Engine@{Engine}}
+\index{Engine@{Engine}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{Engine()}{Engine()}}
+{\footnotesize\ttfamily Engine\+::\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klasy \doxylink{class_engine}{Engine}. 
+
+\Hypertarget{class_engine_a8ef7030a089ecb30bbfcb9e43094717a}\label{class_engine_a8ef7030a089ecb30bbfcb9e43094717a} 
+\index{Engine@{Engine}!````~Engine@{\texorpdfstring{$\sim$}{\string~}Engine}}
+\index{````~Engine@{\texorpdfstring{$\sim$}{\string~}Engine}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Engine()}{\string~Engine()}}
+{\footnotesize\ttfamily Engine\+::\texorpdfstring{$\sim$}{\string~}\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destruktor klasy \doxylink{class_engine}{Engine}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_engine_a35096815432e2ce39f8e2ebaf6cf4b05}\label{class_engine_a35096815432e2ce39f8e2ebaf6cf4b05} 
+\index{Engine@{Engine}!destroy@{destroy}}
+\index{destroy@{destroy}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void Engine\+::destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Niszczy zasoby używane przez silnik gry. 
+
+Czyści grę \Hypertarget{class_engine_a1b654dc41dfbcb5072147f33142b726e}\label{class_engine_a1b654dc41dfbcb5072147f33142b726e} 
+\index{Engine@{Engine}!draw@{draw}}
+\index{draw@{draw}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Engine\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Renderuje obiekty gry na ekranie. 
+
+Rysuje obiekty na ekranie. \Hypertarget{class_engine_a8b8c570ca53e069aacee96f784df9075}\label{class_engine_a8b8c570ca53e069aacee96f784df9075} 
+\index{Engine@{Engine}!GetDifficulty@{GetDifficulty}}
+\index{GetDifficulty@{GetDifficulty}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{GetDifficulty()}{GetDifficulty()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_difficulty_8h_a43efb0a2e61815a66134dfa5ccea0a83}{Difficulty}} Engine\+::\+Get\+Difficulty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Zwraca aktualnie ustawiony poziom trudności gry. 
+
+Pobiera aktualną trudność
+
+\begin{DoxyReturn}{Returns}
+Aktualny poziom trudności gry.
+
+Aktualna trudność gry 
+\end{DoxyReturn}
+\Hypertarget{class_engine_a66d4b02ea8d8450e8d200f874a64c7f8}\label{class_engine_a66d4b02ea8d8450e8d200f874a64c7f8} 
+\index{Engine@{Engine}!GetGamePaused@{GetGamePaused}}
+\index{GetGamePaused@{GetGamePaused}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{GetGamePaused()}{GetGamePaused()}}
+{\footnotesize\ttfamily bool Engine\+::\+Get\+Game\+Paused (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Zwraca stan pauzy gry. 
+
+\begin{DoxyReturn}{Returns}
+true jeśli gra jest w trybie pauzy. 
+
+false jeśli gra nie jest w trybie pauzy. 
+\end{DoxyReturn}
+\Hypertarget{class_engine_af4df91774d72d6ab9857a5c1ae236796}\label{class_engine_af4df91774d72d6ab9857a5c1ae236796} 
+\index{Engine@{Engine}!GetScore@{GetScore}}
+\index{GetScore@{GetScore}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{GetScore()}{GetScore()}}
+{\footnotesize\ttfamily int Engine\+::\+Get\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Zwraca aktualny wynik gry. 
+
+Pobiera aktualny wynik.
+
+\begin{DoxyReturn}{Returns}
+Aktualny wynik gracza.
+
+Aktualny wynik 
+\end{DoxyReturn}
+\Hypertarget{class_engine_a283683441f32e75afedd116682d298e1}\label{class_engine_a283683441f32e75afedd116682d298e1} 
+\index{Engine@{Engine}!GetThroatDifficulty@{GetThroatDifficulty}}
+\index{GetThroatDifficulty@{GetThroatDifficulty}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{GetThroatDifficulty()}{GetThroatDifficulty()}}
+{\footnotesize\ttfamily float Engine\+::\+Get\+Throat\+Difficulty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Zwraca aktualnie ustawiony poziom trudności fizycznej przeszkód w grze. 
+
+Pobiera aktualną trudność "{}gardła"{}.
+
+\begin{DoxyReturn}{Returns}
+Aktualny poziom trudności fizycznej przeszkód.
+
+Aktualna trudność "{}gardła"{} 
+\end{DoxyReturn}
+\Hypertarget{class_engine_a2e628dcc77512bc596c2c14124e1853c}\label{class_engine_a2e628dcc77512bc596c2c14124e1853c} 
+\index{Engine@{Engine}!handleEvent@{handleEvent}}
+\index{handleEvent@{handleEvent}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{handleEvent()}{handleEvent()}}
+{\footnotesize\ttfamily void Engine\+::handle\+Event (\begin{DoxyParamCaption}\item[{sf\+::\+Event \&}]{event }\end{DoxyParamCaption})}
+
+
+
+Obsługuje zdarzenia generowane przez użytkownika (np. 
+
+Przechwytuje zdarzenia.
+
+klawisze, mysz).
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & Zdarzenie SFML do obsłużenia.\\
+\hline
+{\em event} & zdarzenie z biblioteki SFML \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_engine_a03739d20ec04baf2c6170b2feec2c045}\label{class_engine_a03739d20ec04baf2c6170b2feec2c045} 
+\index{Engine@{Engine}!isGameOvered@{isGameOvered}}
+\index{isGameOvered@{isGameOvered}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{isGameOvered()}{isGameOvered()}}
+{\footnotesize\ttfamily bool Engine\+::is\+Game\+Overed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sprawdza, czy gra jest zakończona. 
+
+Pobiera aktualny stan game\+Overed.
+
+\begin{DoxyReturn}{Returns}
+true jeśli gra jest zakończona. 
+
+false jeśli gra nie jest zakończona.
+
+true if the game is over, false otherwise 
+\end{DoxyReturn}
+\Hypertarget{class_engine_aea675ef41cb42dc56cb8d0d4e438dffb}\label{class_engine_aea675ef41cb42dc56cb8d0d4e438dffb} 
+\index{Engine@{Engine}!isGameRunning@{isGameRunning}}
+\index{isGameRunning@{isGameRunning}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{isGameRunning()}{isGameRunning()}}
+{\footnotesize\ttfamily bool Engine\+::is\+Game\+Running (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sprawdza, czy gra jest uruchomiona. 
+
+Pobiera aktualny stan gry.
+
+\begin{DoxyReturn}{Returns}
+true jeśli gra jest uruchomiona. 
+
+false jeśli gra nie jest uruchomiona.
+
+true if the game is running, false otherwise 
+\end{DoxyReturn}
+\Hypertarget{class_engine_a9890e98088df98c357244764344147b3}\label{class_engine_a9890e98088df98c357244764344147b3} 
+\index{Engine@{Engine}!Play@{Play}}
+\index{Play@{Play}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{Play()}{Play()}}
+{\footnotesize\ttfamily void Engine\+::\+Play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Rozpoczyna fazę gry. 
+
+Funkcja główna obsługująca grę \Hypertarget{class_engine_aca6cad28fe6c386cb5dff7b2b1f18252}\label{class_engine_aca6cad28fe6c386cb5dff7b2b1f18252} 
+\index{Engine@{Engine}!restartGame@{restartGame}}
+\index{restartGame@{restartGame}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{restartGame()}{restartGame()}}
+{\footnotesize\ttfamily void Engine\+::restart\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Restartuje grę (po zakończeniu lub na żądanie). 
+
+Restartuje grę \Hypertarget{class_engine_af4c789fb939a0870426c698a5124a0ee}\label{class_engine_af4c789fb939a0870426c698a5124a0ee} 
+\index{Engine@{Engine}!Run@{Run}}
+\index{Run@{Run}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{Run()}{Run()}}
+{\footnotesize\ttfamily void Engine\+::\+Run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Rozpoczyna główną pętlę gry. 
+
+Uruchamia grę \Hypertarget{class_engine_a79bc885fb7c50ba08038c93a35d41ccf}\label{class_engine_a79bc885fb7c50ba08038c93a35d41ccf} 
+\index{Engine@{Engine}!SetDifficulty@{SetDifficulty}}
+\index{SetDifficulty@{SetDifficulty}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{SetDifficulty()}{SetDifficulty()}}
+{\footnotesize\ttfamily void Engine\+::\+Set\+Difficulty (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_difficulty_8h_a43efb0a2e61815a66134dfa5ccea0a83}{Difficulty}}}]{\+\_\+\+\_\+diff }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Ustawia poziom trudności gry. 
+
+Ustawia trudność gry.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+diff} & Nowy poziom trudności.\\
+\hline
+{\em \+\_\+\+\_\+diff} & Nowa trudność gry \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_engine_ad48f745f0b170905c1611f08dd717468}\label{class_engine_ad48f745f0b170905c1611f08dd717468} 
+\index{Engine@{Engine}!SetGameOvered@{SetGameOvered}}
+\index{SetGameOvered@{SetGameOvered}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{SetGameOvered()}{SetGameOvered()}}
+{\footnotesize\ttfamily void Engine\+::\+Set\+Game\+Overed (\begin{DoxyParamCaption}\item[{bool}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Ustawia stan zakończenia gry. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & Nowy stan zakończenia gry.\\
+\hline
+{\em state} & Nowy stan zakonczenia gry \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_engine_afb744d2e07aced85ebc917b06fab6190}\label{class_engine_afb744d2e07aced85ebc917b06fab6190} 
+\index{Engine@{Engine}!SetGamePaused@{SetGamePaused}}
+\index{SetGamePaused@{SetGamePaused}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{SetGamePaused()}{SetGamePaused()}}
+{\footnotesize\ttfamily void Engine\+::\+Set\+Game\+Paused (\begin{DoxyParamCaption}\item[{bool}]{\+\_\+\+\_\+paused }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Ustawia stan pauzy gry. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+paused} & Nowy stan pauzy gry. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_engine_aa0e123d4e83ef4a7aa6bfd4db5a6dbbd}\label{class_engine_aa0e123d4e83ef4a7aa6bfd4db5a6dbbd} 
+\index{Engine@{Engine}!SetGameRunning@{SetGameRunning}}
+\index{SetGameRunning@{SetGameRunning}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{SetGameRunning()}{SetGameRunning()}}
+{\footnotesize\ttfamily void Engine\+::\+Set\+Game\+Running (\begin{DoxyParamCaption}\item[{bool}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Ustawia stan działania gry (uruchomiona lub zatrzymana). 
+
+Ustawia stan gry.
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & Nowy stan gry.\\
+\hline
+{\em state} & Odpwoiada za stan gry \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_engine_a6a3a6218c4a8f16cc3724c1f52216459}\label{class_engine_a6a3a6218c4a8f16cc3724c1f52216459} 
+\index{Engine@{Engine}!SetScore@{SetScore}}
+\index{SetScore@{SetScore}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{SetScore()}{SetScore()}}
+{\footnotesize\ttfamily void Engine\+::\+Set\+Score (\begin{DoxyParamCaption}\item[{int}]{\+\_\+\+\_\+score }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Ustawia nowy wynik gry. 
+
+Ustanawia aktualny wynik.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+score} & Nowy wynik gracza.\\
+\hline
+{\em \+\_\+\+\_\+score} & Nowy wynik \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_engine_a71ecd1afa0eef559db923b84bc51130d}\label{class_engine_a71ecd1afa0eef559db923b84bc51130d} 
+\index{Engine@{Engine}!SetThroatDifficulty@{SetThroatDifficulty}}
+\index{SetThroatDifficulty@{SetThroatDifficulty}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{SetThroatDifficulty()}{SetThroatDifficulty()}}
+{\footnotesize\ttfamily void Engine\+::\+Set\+Throat\+Difficulty (\begin{DoxyParamCaption}\item[{float}]{\+\_\+\+\_\+throat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Ustawia poziom trudności fizycznej przeszkód w grze. 
+
+Ustanawia trudność "{}gardła"{} rury.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+throat} & Nowy poziom trudności fizycznej przeszkód.\\
+\hline
+{\em \+\_\+\+\_\+throat} & Nowa trudność "{}gardła"{} \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_engine_a9ea459592eaddd2fbf07f7487bce5998}\label{class_engine_a9ea459592eaddd2fbf07f7487bce5998} 
+\index{Engine@{Engine}!setup@{setup}}
+\index{setup@{setup}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{setup()}{setup()}}
+{\footnotesize\ttfamily void Engine\+::setup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Przygotowuje silnik gry do rozpoczęcia nowej gry. 
+
+Inicjalizuje grę \Hypertarget{class_engine_a6c95160f6782194966dfd1a0459d1de6}\label{class_engine_a6c95160f6782194966dfd1a0459d1de6} 
+\index{Engine@{Engine}!setupSounds@{setupSounds}}
+\index{setupSounds@{setupSounds}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{setupSounds()}{setupSounds()}}
+{\footnotesize\ttfamily void Engine\+::setup\+Sounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Konfiguruje dźwięki gry. 
+
+\Hypertarget{class_engine_a0aa54b9083cb271af017f88b3f14f38c}\label{class_engine_a0aa54b9083cb271af017f88b3f14f38c} 
+\index{Engine@{Engine}!ShowGetReady@{ShowGetReady}}
+\index{ShowGetReady@{ShowGetReady}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{ShowGetReady()}{ShowGetReady()}}
+{\footnotesize\ttfamily void Engine\+::\+Show\+Get\+Ready (\begin{DoxyParamCaption}\item[{bool}]{idx }\end{DoxyParamCaption})}
+
+
+
+Wyświetla ekran "{}\+Get Ready"{}. 
+
+Wyświetla "{}\+Get Ready"{}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & Indeks do wyboru tekstury "{}\+Get Ready"{}.\\
+\hline
+{\em idx} & Index odpowiedzialny za teksturę którą wyświetlić \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_engine_a4b92d2fe0b2a48c06f0b8408e7c8f6b2}\label{class_engine_a4b92d2fe0b2a48c06f0b8408e7c8f6b2} 
+\index{Engine@{Engine}!ShowMainMenu@{ShowMainMenu}}
+\index{ShowMainMenu@{ShowMainMenu}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{ShowMainMenu()}{ShowMainMenu()}}
+{\footnotesize\ttfamily void Engine\+::\+Show\+Main\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Wyświetla menu główne gry. 
+
+Wyświetla menu główne. \Hypertarget{class_engine_ad2ff110d5a86c1cd60b541d65915ac48}\label{class_engine_ad2ff110d5a86c1cd60b541d65915ac48} 
+\index{Engine@{Engine}!update@{update}}
+\index{update@{update}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Engine\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Aktualizuje stan gry i fizykę obiektów w grze. 
+
+Aktualizuje stan gry. \Hypertarget{class_engine_a734476eadaa950bea4f7b99abef2226b}\label{class_engine_a734476eadaa950bea4f7b99abef2226b} 
+\index{Engine@{Engine}!updateDifficulty@{updateDifficulty}}
+\index{updateDifficulty@{updateDifficulty}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{updateDifficulty()}{updateDifficulty()}}
+{\footnotesize\ttfamily void Engine\+::update\+Difficulty (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_difficulty_8h_a43efb0a2e61815a66134dfa5ccea0a83}{Difficulty}}}]{diff }\end{DoxyParamCaption})}
+
+
+
+Aktualizuje poziom trudności gry na podstawie nowego ustawienia. 
+
+Aktualizuje trudność gry.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+diff} & Nowy poziom trudności do zaktualizowania.\\
+\hline
+{\em diff} & Nowa trudność gry \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_engine_a0b887e4e9370b846840e21dece99bf42}\label{class_engine_a0b887e4e9370b846840e21dece99bf42} 
+\index{Engine@{Engine}!b\_skin@{b\_skin}}
+\index{b\_skin@{b\_skin}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{b\_skin}{b\_skin}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_player_model_8h_a6c0a8c308b8463d300222e6c41f2a4b1}{Player\+Model}} Engine\+::b\+\_\+skin\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Model gracza (postać gracza). 
+
+\Hypertarget{class_engine_a28814fca3577b4b15c1c05e4a59b44e7}\label{class_engine_a28814fca3577b4b15c1c05e4a59b44e7} 
+\index{Engine@{Engine}!backgroundTexture@{backgroundTexture}}
+\index{backgroundTexture@{backgroundTexture}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{backgroundTexture}{backgroundTexture}}
+{\footnotesize\ttfamily sf\+::\+Texture\texorpdfstring{$\ast$}{*} Engine\+::background\+Texture\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Tekstura tła gry. 
+
+\Hypertarget{class_engine_aab0a1b1d855b3c43836c131c15dc3cf3}\label{class_engine_aab0a1b1d855b3c43836c131c15dc3cf3} 
+\index{Engine@{Engine}!bird@{bird}}
+\index{bird@{bird}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{bird}{bird}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_bird}{Bird}}\texorpdfstring{$\ast$}{*} Engine\+::bird\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Obiekt reprezentujący postać ptaka w grze. 
+
+\Hypertarget{class_engine_afb3965695543f7c2774e6c9ebfa99835}\label{class_engine_afb3965695543f7c2774e6c9ebfa99835} 
+\index{Engine@{Engine}!chosenDifficulty@{chosenDifficulty}}
+\index{chosenDifficulty@{chosenDifficulty}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{chosenDifficulty}{chosenDifficulty}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_difficulty_8h_a43efb0a2e61815a66134dfa5ccea0a83}{Difficulty}} Engine\+::chosen\+Difficulty = \mbox{\hyperlink{_difficulty_8h_a43efb0a2e61815a66134dfa5ccea0a83a87f8a6ab85c9ced3702b4ea641ad4bb5}{Difficulty\+::\+Medium}}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Wybrany poziom trudności gry. 
+
+Wybrany poziom trudności. \Hypertarget{class_engine_a8ba7760cfe1f86c92b0d70647700fc23}\label{class_engine_a8ba7760cfe1f86c92b0d70647700fc23} 
+\index{Engine@{Engine}!coin@{coin}}
+\index{coin@{coin}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{coin}{coin}}
+{\footnotesize\ttfamily sf\+::\+Texture\texorpdfstring{$\ast$}{*} Engine\+::coin\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Tekstura monety w grze. 
+
+\Hypertarget{class_engine_a029aaf043f83e3c468df8d507156d421}\label{class_engine_a029aaf043f83e3c468df8d507156d421} 
+\index{Engine@{Engine}!coinSprite@{coinSprite}}
+\index{coinSprite@{coinSprite}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{coinSprite}{coinSprite}}
+{\footnotesize\ttfamily sf\+::\+Sprite Engine\+::coin\+Sprite\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Sprite monety w grze. 
+
+\Hypertarget{class_engine_a3ef576ecb9418de55026fa6634ce9f70}\label{class_engine_a3ef576ecb9418de55026fa6634ce9f70} 
+\index{Engine@{Engine}!delta@{delta}}
+\index{delta@{delta}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{delta}{delta}}
+{\footnotesize\ttfamily float Engine\+::delta\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Czas delta -\/ czas od ostatniej klatki, używany do obliczeń fizycznych. 
+
+\Hypertarget{class_engine_a4bb2952bf5bed744d0276b85257d0e3a}\label{class_engine_a4bb2952bf5bed744d0276b85257d0e3a} 
+\index{Engine@{Engine}!dieSound@{dieSound}}
+\index{dieSound@{dieSound}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{dieSound}{dieSound}}
+{\footnotesize\ttfamily sf\+::\+Sound Engine\+::die\+Sound\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Dźwięk śmierci gracza. 
+
+\Hypertarget{class_engine_abe022c4a98c7123dfd5d94388c9bf9a1}\label{class_engine_abe022c4a98c7123dfd5d94388c9bf9a1} 
+\index{Engine@{Engine}!dieSoundBuffer@{dieSoundBuffer}}
+\index{dieSoundBuffer@{dieSoundBuffer}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{dieSoundBuffer}{dieSoundBuffer}}
+{\footnotesize\ttfamily sf\+::\+Sound\+Buffer Engine\+::die\+Sound\+Buffer\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Bufor dźwięku śmierci gracza. 
+
+\Hypertarget{class_engine_ad68f03b0b1c3b3327cd77f5ab9d802d2}\label{class_engine_ad68f03b0b1c3b3327cd77f5ab9d802d2} 
+\index{Engine@{Engine}!font@{font}}
+\index{font@{font}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{font}{font}}
+{\footnotesize\ttfamily sf\+::\+Font\texorpdfstring{$\ast$}{*} Engine\+::font\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Czcionka używana do wyświetlania tekstu w grze. 
+
+\Hypertarget{class_engine_abc1ee059032f0c85283404b77c7651a4}\label{class_engine_abc1ee059032f0c85283404b77c7651a4} 
+\index{Engine@{Engine}!gameOvered@{gameOvered}}
+\index{gameOvered@{gameOvered}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{gameOvered}{gameOvered}}
+{\footnotesize\ttfamily bool Engine\+::game\+Overed = false\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Flaga określająca, czy gra jest w trakcie działania lub zakończona. 
+
+Flaga wskazująca, czy gra jest zakończona. \Hypertarget{class_engine_a4b2e489e2f9333afb17bd251d439eb1f}\label{class_engine_a4b2e489e2f9333afb17bd251d439eb1f} 
+\index{Engine@{Engine}!gameoverSprite@{gameoverSprite}}
+\index{gameoverSprite@{gameoverSprite}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{gameoverSprite}{gameoverSprite}}
+{\footnotesize\ttfamily sf\+::\+Sprite Engine\+::gameover\+Sprite\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Sprite ekranu końca gry. 
+
+\Hypertarget{class_engine_aed1f88872ece628d26f66e6ef33113c9}\label{class_engine_aed1f88872ece628d26f66e6ef33113c9} 
+\index{Engine@{Engine}!gameoverTexture@{gameoverTexture}}
+\index{gameoverTexture@{gameoverTexture}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{gameoverTexture}{gameoverTexture}}
+{\footnotesize\ttfamily sf\+::\+Texture\texorpdfstring{$\ast$}{*} Engine\+::gameover\+Texture\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Tekstura do wyświetlania ekranu końca gry. 
+
+\Hypertarget{class_engine_a444d352a0fd30a78a5ce04539e8c4228}\label{class_engine_a444d352a0fd30a78a5ce04539e8c4228} 
+\index{Engine@{Engine}!gamePaused@{gamePaused}}
+\index{gamePaused@{gamePaused}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{gamePaused}{gamePaused}}
+{\footnotesize\ttfamily bool Engine\+::game\+Paused\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Flagi stanów gry\+: menu główne, przygotowanie do rozpoczęcia, pauza. 
+
+\Hypertarget{class_engine_a5ad2ede562b6fe476e21b07a7fc1110a}\label{class_engine_a5ad2ede562b6fe476e21b07a7fc1110a} 
+\index{Engine@{Engine}!gameRunning@{gameRunning}}
+\index{gameRunning@{gameRunning}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{gameRunning}{gameRunning}}
+{\footnotesize\ttfamily bool Engine\+::game\+Running = false\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Flaga wskazująca, czy gra jest uruchomiona. 
+
+\Hypertarget{class_engine_a093da3bf5f16f76956431488583b2139}\label{class_engine_a093da3bf5f16f76956431488583b2139} 
+\index{Engine@{Engine}!GetReadyFrame@{GetReadyFrame}}
+\index{GetReadyFrame@{GetReadyFrame}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{GetReadyFrame}{GetReadyFrame}}
+{\footnotesize\ttfamily bool Engine\+::\+Get\+Ready\+Frame\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_engine_aab1a7c52bcb892ddd20da145fafe3a68}\label{class_engine_aab1a7c52bcb892ddd20da145fafe3a68} 
+\index{Engine@{Engine}!getReadySprite@{getReadySprite}}
+\index{getReadySprite@{getReadySprite}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{getReadySprite}{getReadySprite}}
+{\footnotesize\ttfamily sf\+::\+Sprite Engine\+::get\+Ready\+Sprite\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Sprite ekranu "{}\+Get Ready"{}. 
+
+\Hypertarget{class_engine_acdea2b80d450e98fda794dd5f28b31b3}\label{class_engine_acdea2b80d450e98fda794dd5f28b31b3} 
+\index{Engine@{Engine}!getReadyTexture@{getReadyTexture}}
+\index{getReadyTexture@{getReadyTexture}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{getReadyTexture}{getReadyTexture}}
+{\footnotesize\ttfamily sf\+::\+Texture\texorpdfstring{$\ast$}{*} Engine\+::get\+Ready\+Texture\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Tekstura do wyświetlania ekranu "{}\+Get Ready"{}. 
+
+\Hypertarget{class_engine_a7c03664b8b75a1dbd969c27457d34c69}\label{class_engine_a7c03664b8b75a1dbd969c27457d34c69} 
+\index{Engine@{Engine}!groundOffset@{groundOffset}}
+\index{groundOffset@{groundOffset}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{groundOffset}{groundOffset}}
+{\footnotesize\ttfamily float Engine\+::ground\+Offset\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Przesunięcie terenu gry (ziemi). 
+
+\Hypertarget{class_engine_a459daa61c26ee4632d1a7471b6938b2a}\label{class_engine_a459daa61c26ee4632d1a7471b6938b2a} 
+\index{Engine@{Engine}!groundTexture@{groundTexture}}
+\index{groundTexture@{groundTexture}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{groundTexture}{groundTexture}}
+{\footnotesize\ttfamily sf\+::\+Texture\texorpdfstring{$\ast$}{*} Engine\+::ground\+Texture\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Tekstura terenu gry (ziemi). 
+
+\Hypertarget{class_engine_ab620a1c8b3473091733913aacda77e01}\label{class_engine_ab620a1c8b3473091733913aacda77e01} 
+\index{Engine@{Engine}!hitSound@{hitSound}}
+\index{hitSound@{hitSound}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{hitSound}{hitSound}}
+{\footnotesize\ttfamily sf\+::\+Sound Engine\+::hit\+Sound\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Dźwięk uderzenia przeszkody w grze. 
+
+\Hypertarget{class_engine_a0a50b27e94bd45b303b6d11ad1a967e1}\label{class_engine_a0a50b27e94bd45b303b6d11ad1a967e1} 
+\index{Engine@{Engine}!hitSoundBuffer@{hitSoundBuffer}}
+\index{hitSoundBuffer@{hitSoundBuffer}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{hitSoundBuffer}{hitSoundBuffer}}
+{\footnotesize\ttfamily sf\+::\+Sound\+Buffer Engine\+::hit\+Sound\+Buffer\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Bufor dźwięku uderzenia przeszkody w grze. 
+
+\Hypertarget{class_engine_abf16480a079090931eae393b6d307b87}\label{class_engine_abf16480a079090931eae393b6d307b87} 
+\index{Engine@{Engine}!inGetReady@{inGetReady}}
+\index{inGetReady@{inGetReady}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{inGetReady}{inGetReady}}
+{\footnotesize\ttfamily bool Engine\+::in\+Get\+Ready\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_engine_aa55c13dae065e001ca1b0026dea2002f}\label{class_engine_aa55c13dae065e001ca1b0026dea2002f} 
+\index{Engine@{Engine}!inMainMenu@{inMainMenu}}
+\index{inMainMenu@{inMainMenu}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{inMainMenu}{inMainMenu}}
+{\footnotesize\ttfamily bool Engine\+::in\+Main\+Menu\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_engine_a67789981292a556cff57698fda36941c}\label{class_engine_a67789981292a556cff57698fda36941c} 
+\index{Engine@{Engine}!logoSprite@{logoSprite}}
+\index{logoSprite@{logoSprite}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{logoSprite}{logoSprite}}
+{\footnotesize\ttfamily sf\+::\+Sprite Engine\+::logo\+Sprite\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Sprite logo gry. 
+
+\Hypertarget{class_engine_a9cf5221dc0a0701f7bef328708d7158d}\label{class_engine_a9cf5221dc0a0701f7bef328708d7158d} 
+\index{Engine@{Engine}!logoTexture@{logoTexture}}
+\index{logoTexture@{logoTexture}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{logoTexture}{logoTexture}}
+{\footnotesize\ttfamily sf\+::\+Texture\texorpdfstring{$\ast$}{*} Engine\+::logo\+Texture\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Tekstura do wyświetlania logo gry. 
+
+\Hypertarget{class_engine_a2528d36ac99d05d627a73abc1670c8fe}\label{class_engine_a2528d36ac99d05d627a73abc1670c8fe} 
+\index{Engine@{Engine}!lowerPipe@{lowerPipe}}
+\index{lowerPipe@{lowerPipe}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{lowerPipe}{lowerPipe}}
+{\footnotesize\ttfamily sf\+::\+Texture\texorpdfstring{$\ast$}{*} Engine\+::lower\+Pipe\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Tekstura rury dolnej (przeszkody). 
+
+\Hypertarget{class_engine_a78a382fb19376f9878a297742eeb5c50}\label{class_engine_a78a382fb19376f9878a297742eeb5c50} 
+\index{Engine@{Engine}!pipeGeneratingClock@{pipeGeneratingClock}}
+\index{pipeGeneratingClock@{pipeGeneratingClock}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{pipeGeneratingClock}{pipeGeneratingClock}}
+{\footnotesize\ttfamily sf\+::\+Clock\texorpdfstring{$\ast$}{*} Engine\+::pipe\+Generating\+Clock\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Zegar do generowania rur w grze. 
+
+\Hypertarget{class_engine_a0e4b0b2f9d5bc28b8df37bc8b4e6c7f5}\label{class_engine_a0e4b0b2f9d5bc28b8df37bc8b4e6c7f5} 
+\index{Engine@{Engine}!pipes@{pipes}}
+\index{pipes@{pipes}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{pipes}{pipes}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_pipe}{Pipe}}\texorpdfstring{$\ast$}{*}$>$ Engine\+::pipes\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Wektor przechowujący wskaźniki na rury (przeszkody) w grze. 
+
+\Hypertarget{class_engine_a178795b1bd20d0424ea5307021e200a2}\label{class_engine_a178795b1bd20d0424ea5307021e200a2} 
+\index{Engine@{Engine}!pointSound@{pointSound}}
+\index{pointSound@{pointSound}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{pointSound}{pointSound}}
+{\footnotesize\ttfamily sf\+::\+Sound Engine\+::point\+Sound\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Dźwięk punktu zdobytego w grze. 
+
+\Hypertarget{class_engine_af426e66eef798faf9b1a679304b40081}\label{class_engine_af426e66eef798faf9b1a679304b40081} 
+\index{Engine@{Engine}!pointSoundBuffer@{pointSoundBuffer}}
+\index{pointSoundBuffer@{pointSoundBuffer}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{pointSoundBuffer}{pointSoundBuffer}}
+{\footnotesize\ttfamily sf\+::\+Sound\+Buffer Engine\+::point\+Sound\+Buffer\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Bufor dźwięku punktu zdobytego w grze. 
+
+\Hypertarget{class_engine_aed601a334a96dfe7845255673d4a2fd7}\label{class_engine_aed601a334a96dfe7845255673d4a2fd7} 
+\index{Engine@{Engine}!restartTexture@{restartTexture}}
+\index{restartTexture@{restartTexture}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{restartTexture}{restartTexture}}
+{\footnotesize\ttfamily sf\+::\+Texture\texorpdfstring{$\ast$}{*} Engine\+::restart\+Texture\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Tekstura do wyświetlania przycisku restartu. 
+
+\Hypertarget{class_engine_ab774cff40d8dff8228073ccf3ad4f181}\label{class_engine_ab774cff40d8dff8228073ccf3ad4f181} 
+\index{Engine@{Engine}!score@{score}}
+\index{score@{score}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily int Engine\+::score = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Aktualny wynik gracza. 
+
+Inicjalizuje wartości zmiennych statycznych.
+
+Zlicza wynik \Hypertarget{class_engine_accc81af05a6f2ee25fcb5b20631d00da}\label{class_engine_accc81af05a6f2ee25fcb5b20631d00da} 
+\index{Engine@{Engine}!startSprite@{startSprite}}
+\index{startSprite@{startSprite}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{startSprite}{startSprite}}
+{\footnotesize\ttfamily sf\+::\+Sprite Engine\+::start\+Sprite\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Sprite przycisku rozpoczęcia gry. 
+
+\Hypertarget{class_engine_ae5d0dfb044ff6643a89e388833ad5f12}\label{class_engine_ae5d0dfb044ff6643a89e388833ad5f12} 
+\index{Engine@{Engine}!startTexture@{startTexture}}
+\index{startTexture@{startTexture}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{startTexture}{startTexture}}
+{\footnotesize\ttfamily sf\+::\+Texture\texorpdfstring{$\ast$}{*} Engine\+::start\+Texture\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Tekstura do wyświetlania przycisku startowego. 
+
+\Hypertarget{class_engine_a06f142569ffd22d7aa603d1e05ad6026}\label{class_engine_a06f142569ffd22d7aa603d1e05ad6026} 
+\index{Engine@{Engine}!throatDifficulty@{throatDifficulty}}
+\index{throatDifficulty@{throatDifficulty}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{throatDifficulty}{throatDifficulty}}
+{\footnotesize\ttfamily float Engine\+::throat\+Difficulty = 340\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Poziom trudności gry ustalony przez gracza. 
+
+Wysokość rury. \Hypertarget{class_engine_aad615bb6a1f18abd516cc633b0eadd29}\label{class_engine_aad615bb6a1f18abd516cc633b0eadd29} 
+\index{Engine@{Engine}!upperPipe@{upperPipe}}
+\index{upperPipe@{upperPipe}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{upperPipe}{upperPipe}}
+{\footnotesize\ttfamily sf\+::\+Texture\texorpdfstring{$\ast$}{*} Engine\+::upper\+Pipe\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Tekstura rury górnej (przeszkody). 
+
+\Hypertarget{class_engine_acb19f573e60457464cc73625d7882653}\label{class_engine_acb19f573e60457464cc73625d7882653} 
+\index{Engine@{Engine}!window@{window}}
+\index{window@{window}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{window}{window}}
+{\footnotesize\ttfamily sf\+::\+Render\+Window\texorpdfstring{$\ast$}{*} Engine\+::window\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Okno renderowania SFML. 
+
+\Hypertarget{class_engine_a3ebd3620afea11af3ecba26850bf9e5b}\label{class_engine_a3ebd3620afea11af3ecba26850bf9e5b} 
+\index{Engine@{Engine}!wingSound@{wingSound}}
+\index{wingSound@{wingSound}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{wingSound}{wingSound}}
+{\footnotesize\ttfamily sf\+::\+Sound Engine\+::wing\+Sound\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Dźwięk skrzydeł ptaka. 
+
+\Hypertarget{class_engine_a1e4d3322832f1a818c6536f08896fe47}\label{class_engine_a1e4d3322832f1a818c6536f08896fe47} 
+\index{Engine@{Engine}!wingSoundBuffer@{wingSoundBuffer}}
+\index{wingSoundBuffer@{wingSoundBuffer}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{wingSoundBuffer}{wingSoundBuffer}}
+{\footnotesize\ttfamily sf\+::\+Sound\+Buffer Engine\+::wing\+Sound\+Buffer\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Bufor dźwięku skrzydeł ptaka. 
+

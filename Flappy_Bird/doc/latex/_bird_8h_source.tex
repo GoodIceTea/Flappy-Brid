@@ -1,0 +1,47 @@
+\doxysection{Bird.\+h}
+\hypertarget{_bird_8h_source}{}\label{_bird_8h_source}\mbox{\hyperlink{_bird_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ BIRD\_H}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ BIRD\_H}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <SFML/Graphics.hpp>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <SFML/Audio.hpp>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_player_model_8h}{PlayerModel.h}}"{}}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_bird}{Bird}}\ \{}
+\DoxyCodeLine{00022\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{structpath_model}{pathModel}}\ b\_skin;\ }
+\DoxyCodeLine{00024\ \ \ \ \ sf::Texture*\ texture;\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{float}\ y;\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{float}\ vel;\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{float}\ currentFrame;\ }
+\DoxyCodeLine{00028\ \ \ \ \ sf::Clock*\ animationClock;\ }
+\DoxyCodeLine{00029\ \ \ \ \ vector<sf::Texture*>\ frames;\ }
+\DoxyCodeLine{00030\ \ \ \ \ sf::Sound\&\ hitSound;\ }
+\DoxyCodeLine{00031\ \ \ \ \ sf::Sound\&\ dieSound;\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{bool}\ hitSound\_temp;\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{bool}\ dieSound\_temp;\ }
+\DoxyCodeLine{00035\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00042\ \ \ \ \ \mbox{\hyperlink{class_bird_a9948c9558b0323ab075f7f42e92905a6}{Bird}}(\mbox{\hyperlink{_player_model_8h_a6c0a8c308b8463d300222e6c41f2a4b1}{PlayerModel}}\ skin,\ sf::Sound\&\ hitSound,\ sf::Sound\&\ dieSound);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{class_bird_a7d10693b91a2736611c37f1ef205b911}{\string~Bird}}();}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00053\ \ \ \ \ sf::FloatRect\ \mbox{\hyperlink{class_bird_add5a8c1d18baff8ca2285279335496b1}{getRect}}();}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_bird_a4065f3bbea46277fc75ebfef79c3f888}{flap}}();}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_bird_ab8e0d4f887079a0eb31bdcd335d496d4}{draw}}(sf::RenderWindow\&\ window);}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_bird_ad57497311542d9251e9fcfdfd5e97edd}{update}}(\textcolor{keywordtype}{float}\ delta,\ sf::Texture*\ backgroundTexture);}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00078\ \ \ \ \ \mbox{\hyperlink{structpath_model}{pathModel}}\ \mbox{\hyperlink{class_bird_a265bf6ffe8705a36d9c4daad217e8aed}{getPathModel}}(\mbox{\hyperlink{_player_model_8h_a6c0a8c308b8463d300222e6c41f2a4b1}{PlayerModel}}\ model);}
+\DoxyCodeLine{00079\ \};}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

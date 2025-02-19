@@ -1,0 +1,152 @@
+\doxysection{Pipe Class Reference}
+\hypertarget{class_pipe}{}\label{class_pipe}\index{Pipe@{Pipe}}
+
+
+Klasa reprezentująca pojedynczą rurę (przeszkodę) w grze Flappy \doxylink{class_bird}{Bird}.  
+
+
+
+
+{\ttfamily \#include $<$Pipe.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pipe_a44e1548b2a4ade3a8a1eafcead4c5421}{Pipe}} (sf\+::\+Sound \&point\+Sound, sf\+::\+Sound \&hit\+Sound, sf\+::\+Texture \texorpdfstring{$\ast$}{*}upper\+Pipe, sf\+::\+Texture \texorpdfstring{$\ast$}{*}lower\+Pipe, sf\+::\+Texture \texorpdfstring{$\ast$}{*}coin, sf\+::\+Render\+Window \texorpdfstring{$\ast$}{*}window)
+\begin{DoxyCompactList}\small\item\em Konstruktor klasy \doxylink{class_pipe}{Pipe}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pipe_ae092c85ae945b1c921c5fdf8e2b28149}{draw}} (sf\+::\+Render\+Window \&window) const
+\begin{DoxyCompactList}\small\item\em Rysuje rurę (przeszkodę) oraz monetę na ekranie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pipe_a58c659a7c66d9e1ab5e778a73a55ab4a}{update}} (\mbox{\hyperlink{class_bird}{Bird}} \texorpdfstring{$\ast$}{*}bird, float delta)
+\begin{DoxyCompactList}\small\item\em Aktualizuje pozycję rury oraz sprawdza kolizje z graczem. \end{DoxyCompactList}\item 
+sf\+::\+Float\+Rect \mbox{\hyperlink{class_pipe_af2df063a5deae1a9638cfd21aba7d014}{get\+Upper\+Rect}} () const
+\begin{DoxyCompactList}\small\item\em Zwraca prostokąt kolizji dla górnej rury. \end{DoxyCompactList}\item 
+sf\+::\+Float\+Rect \mbox{\hyperlink{class_pipe_af5b3382684e81b6e38c5924847253deb}{get\+Lower\+Rect}} () const
+\begin{DoxyCompactList}\small\item\em Zwraca prostokąt kolizji dla dolnej rury. \end{DoxyCompactList}\item 
+sf\+::\+Float\+Rect \mbox{\hyperlink{class_pipe_a5bce62c62ce1d415997722b23fe96a46}{get\+Coin\+Rect}} () const
+\begin{DoxyCompactList}\small\item\em Zwraca prostokąt kolizji dla monety. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa reprezentująca pojedynczą rurę (przeszkodę) w grze Flappy \doxylink{class_bird}{Bird}. 
+
+Rura składa się z górnej i dolnej części oraz opcjonalnie monety. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_pipe_a44e1548b2a4ade3a8a1eafcead4c5421}\label{class_pipe_a44e1548b2a4ade3a8a1eafcead4c5421} 
+\index{Pipe@{Pipe}!Pipe@{Pipe}}
+\index{Pipe@{Pipe}!Pipe@{Pipe}}
+\doxysubsubsection{\texorpdfstring{Pipe()}{Pipe()}}
+{\footnotesize\ttfamily Pipe\+::\+Pipe (\begin{DoxyParamCaption}\item[{sf\+::\+Sound \&}]{point\+Sound,  }\item[{sf\+::\+Sound \&}]{hit\+Sound,  }\item[{sf\+::\+Texture \texorpdfstring{$\ast$}{*}}]{upper\+Pipe,  }\item[{sf\+::\+Texture \texorpdfstring{$\ast$}{*}}]{lower\+Pipe,  }\item[{sf\+::\+Texture \texorpdfstring{$\ast$}{*}}]{coin,  }\item[{sf\+::\+Render\+Window \texorpdfstring{$\ast$}{*}}]{window }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klasy \doxylink{class_pipe}{Pipe}. 
+
+Inicjalizuje obiekt rury (przeszkody) w grze.
+
+
+\begin{DoxyParams}{Parameters}
+{\em point\+Sound} & Dźwięk zdobycia punktu. \\
+\hline
+{\em hit\+Sound} & Dźwięk uderzenia w przeszkodę. \\
+\hline
+{\em upper\+Pipe} & Tekstura rury górnej. \\
+\hline
+{\em lower\+Pipe} & Tekstura rury dolnej. \\
+\hline
+{\em coin} & Tekstura monety. \\
+\hline
+{\em window} & Wskaźnik na okno renderowania SFML.\\
+\hline
+\end{DoxyParams}
+Inicjalizuje obiekt rury (przeszkody) w grze Flappy \doxylink{class_bird}{Bird}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em point\+Sound} & Dźwięk zdobycia punktu. \\
+\hline
+{\em hit\+Sound} & Dźwięk uderzenia w przeszkodę. \\
+\hline
+{\em upper\+Pipe} & Tekstura rury górnej. \\
+\hline
+{\em lower\+Pipe} & Tekstura rury dolnej. \\
+\hline
+{\em coin} & Tekstura monety. \\
+\hline
+{\em window} & Wskaźnik na okno renderowania SFML. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_pipe_ae092c85ae945b1c921c5fdf8e2b28149}\label{class_pipe_ae092c85ae945b1c921c5fdf8e2b28149} 
+\index{Pipe@{Pipe}!draw@{draw}}
+\index{draw@{draw}!Pipe@{Pipe}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Pipe\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption}) const}
+
+
+
+Rysuje rurę (przeszkodę) oraz monetę na ekranie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & Referencja do okna renderowania SFML. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_pipe_a5bce62c62ce1d415997722b23fe96a46}\label{class_pipe_a5bce62c62ce1d415997722b23fe96a46} 
+\index{Pipe@{Pipe}!getCoinRect@{getCoinRect}}
+\index{getCoinRect@{getCoinRect}!Pipe@{Pipe}}
+\doxysubsubsection{\texorpdfstring{getCoinRect()}{getCoinRect()}}
+{\footnotesize\ttfamily sf\+::\+Float\+Rect Pipe\+::get\+Coin\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Zwraca prostokąt kolizji dla monety. 
+
+\begin{DoxyReturn}{Returns}
+Prostokąt kolizji monety. 
+\end{DoxyReturn}
+\Hypertarget{class_pipe_af5b3382684e81b6e38c5924847253deb}\label{class_pipe_af5b3382684e81b6e38c5924847253deb} 
+\index{Pipe@{Pipe}!getLowerRect@{getLowerRect}}
+\index{getLowerRect@{getLowerRect}!Pipe@{Pipe}}
+\doxysubsubsection{\texorpdfstring{getLowerRect()}{getLowerRect()}}
+{\footnotesize\ttfamily sf\+::\+Float\+Rect Pipe\+::get\+Lower\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Zwraca prostokąt kolizji dla dolnej rury. 
+
+\begin{DoxyReturn}{Returns}
+Prostokąt kolizji dolnej rury. 
+\end{DoxyReturn}
+\Hypertarget{class_pipe_af2df063a5deae1a9638cfd21aba7d014}\label{class_pipe_af2df063a5deae1a9638cfd21aba7d014} 
+\index{Pipe@{Pipe}!getUpperRect@{getUpperRect}}
+\index{getUpperRect@{getUpperRect}!Pipe@{Pipe}}
+\doxysubsubsection{\texorpdfstring{getUpperRect()}{getUpperRect()}}
+{\footnotesize\ttfamily sf\+::\+Float\+Rect Pipe\+::get\+Upper\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Zwraca prostokąt kolizji dla górnej rury. 
+
+\begin{DoxyReturn}{Returns}
+Prostokąt kolizji górnej rury. 
+\end{DoxyReturn}
+\Hypertarget{class_pipe_a58c659a7c66d9e1ab5e778a73a55ab4a}\label{class_pipe_a58c659a7c66d9e1ab5e778a73a55ab4a} 
+\index{Pipe@{Pipe}!update@{update}}
+\index{update@{update}!Pipe@{Pipe}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Pipe\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_bird}{Bird}} \texorpdfstring{$\ast$}{*}}]{bird,  }\item[{float}]{delta }\end{DoxyParamCaption})}
+
+
+
+Aktualizuje pozycję rury oraz sprawdza kolizje z graczem. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bird} & Wskaźnik do obiektu gracza (ptaka). \\
+\hline
+{\em delta} & Czas od ostatniej klatki, używany do obliczeń czasowych. \\
+\hline
+\end{DoxyParams}
